@@ -1,4 +1,3 @@
-
 use bevy::prelude::{Color, Component};
 
 #[derive(Clone, Component)]

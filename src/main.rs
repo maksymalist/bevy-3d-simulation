@@ -8,10 +8,10 @@ use lib::{Grid, Block};
 pub const HEIGHT: f32 = 720.0;
 pub const WIDTH: f32 = 1280.0;
 
-const BLOCK_SIZE: f32 = 0.95;
-const GRID_WIDTH: usize = 20;
-const GRID_HEIGHT: usize = 20;
-const GRID_DEPTH: usize = 20;
+const BLOCK_SIZE: f32 = 1.0;
+const GRID_WIDTH: usize = 15;
+const GRID_HEIGHT: usize = 15;
+const GRID_DEPTH: usize = 15;
 
 fn main() {
 
