@@ -1,0 +1,9 @@
+[package]
+name = "bevy-3d"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bevy = {version = "0.9", features = ["dynamic"] }
+bevy_flycam = "0.9.0"
+bindgen = "0.63.0"
