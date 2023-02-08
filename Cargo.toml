@@ -7,3 +7,9 @@ edition = "2021"
 bevy = {version = "0.9.1", features = ["dynamic"] }
 bevy_flycam = "0.9.0"
 rand = "0.8.5"
+
+[target.wasm32-unknown-unknown]
+runner = "wasm-server-runner"
+
+
+

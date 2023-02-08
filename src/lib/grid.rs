@@ -30,7 +30,7 @@ impl Grid {
                 for z in 0..self.depth {
                     let mut rng = rand::thread_rng();
                     let mut alive: bool = true;
-                    if rng.gen_range(0..100) > 80 {
+                    if rng.gen_range(0..100) > 10 {
                         alive = false;
                     }
                     
@@ -117,11 +117,11 @@ impl Grid {
             let mut new_block = block.clone();
 
             if block.is_alive {
-                if ![1,3,5,7,9,11,13,15,17,19,21,23].contains(&alive_neighbors) {
+                if [1,3,5,7,9,11,13,15,17,19,21,23].contains(&alive_neighbors) {
                     new_block.kill();
                 }
             } else {
-                if [2,4].contains(&alive_neighbors) {
+                if [2,4,6,8].contains(&alive_neighbors) {
                     new_block.revive();
                 }
             }
