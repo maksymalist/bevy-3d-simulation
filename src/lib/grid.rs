@@ -86,7 +86,7 @@ impl Grid {
         let grid_pattern = self.grid.values().map(|block| block.is_alive).collect::<HashSet<bool>>();
         self.prev_patterns.push(grid_pattern);
 
-        if self.prev_patterns.len() > 10 {
+        if self.prev_patterns.len() > 5 {
             self.prev_patterns.remove(0);
             let mut is_repeating = true;
             let last_pattern = self.prev_patterns.last().unwrap();
